@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+}
+
+canvas {
+  border: 2px solid black;
+}
+
+#controles-esquerda, #controles-direita {
+  position: fixed;
+  top: 20px;
+  padding: 10px;
+  font-size: 16px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6); 
+  border-radius: 8px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.8);
+  width: 200px;
+  z-index: 10;
+}
+
+#controles-esquerda {
+  left: 20px;
+}
+
+#controles-direita {
+  right: 20px;
+}
+
+#controles-esquerda p, #controles-direita p {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+#controles-esquerda i, #controles-direita i {
+  margin-right: 8px;
+  font-size: 22px;
+  color: white;
+}
+
+#controles-esquerda span, #controles-direita span {
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+}
+
+.atirar {
+  color: #32cd32; 
+  font-weight: 700;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.atirar i {
+  margin-right: 5px; 
+}
+
+#controles-esquerda p:last-child, #controles-direita p:last-child {
+  margin-bottom: 0;
+}
